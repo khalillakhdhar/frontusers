@@ -13,10 +13,10 @@ class App extends Component
 return(
 <Router>
 <Routes>
-<Route path='/' element={<ListUsers/>} />
-<Route path='/create' element={<AddUser/>} />
-<Route path='/update/:id' element={<UpdateUser/>} />
-<Route path='/show/:id' element={<ShowUser/>} />
+<Route path='/' element={<ListUsers/>} exact  />
+<Route path='/create' element={<AddUser/>} exact  />
+<Route path='/update/:id' element={<UpdateUser/>} exact  />
+<Route path='/show/:id' element={<ShowUser/>} exact />
 
 
 

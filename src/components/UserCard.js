@@ -7,7 +7,7 @@ const UserCard = (props) => {
     <div className="card-container">
     <div className="desc">
     <h2>
-    <Link to={`/show-user/${user._id}`}>
+    <Link to={`/show/${user._id}`}>
     { user.nom } {user.prenom}
     </Link>
     </h2>
