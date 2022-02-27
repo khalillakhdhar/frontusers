@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { number } from './../../node_modules/tailwindcss/src/util/dataTypes';
 
 class AddUser extends Component
 {
@@ -7,14 +8,30 @@ class AddUser extends Component
 constructor(props)
 {
     super(props);
+    this.state=
+    {
+        nom:"",
+        prenom:"",
+        email:"",
+        adresse:"",
+        age:number,
+    }
 
 }
+onChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+    };
 render()
 {
 
 return(
 
-    <h1>AddUser</h1>
+    <form noValidate onSubmit={this.onSubmit}>
+<div className='form-group'>
+<input type='text' placeholder='Nom' name='nom' className='form-control' value={this.state.nom} onChange={this.onChange}/>
+{this.state.nom}
+</div>
+</form>
 );
 
 }
