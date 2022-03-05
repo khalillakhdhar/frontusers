@@ -43,7 +43,7 @@ onSubmit= e=>{
         adresse:"",
         age:number,
     })
-    //this.props.history.push('/');
+    this.props.history.push('/');
     alert("utilisateur ajouté avec succés");
     })
     .catch(err => {

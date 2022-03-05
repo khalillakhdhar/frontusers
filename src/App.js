@@ -16,7 +16,7 @@ return(
 <Route path='/' element={<ListUsers/>} exact  />
 <Route path='/create' element={<AddUser/>} exact  />
 <Route path='/update/:id' element={<UpdateUser/>} exact  />
-<Route path='/show/:id' element={<ShowUser/>} exact />
+<Route path='/show/:id' element={<ShowUser/>}  />
 
 
 
